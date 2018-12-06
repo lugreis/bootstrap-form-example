@@ -17,5 +17,73 @@
                         validation state that can be triggered by attempting to submit the form without completing it.</p>
         </div>
     </header>
+    <form>
+        <div class="container">
+            <div class="col-8">
+                <h3>Billing address</h3>
+            </div>
+            <div class="form-row">
+                <div class="col-md-4">
+                    <label for="validationDefault01">First name</label>
+                    <input type="text" class="form-control" id="validationDefault01" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationDefault02">Last name</label>
+                    <input type="text" class="form-control" id="validationDefault02" required>
+                </div>
+                <div class="col-8">
+                    <label for="validationCustomUsername">Username</label>
+                <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                </div>
+                    <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email(Optional)</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Address 2 (Optional)</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Apartament or Suite">
+                </div>
+                <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="inputState">Country</label>
+                    <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>United States</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>California</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+            <hr>
+        </div>
+    </form>
+    <div class="container">
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Shipping address is the same as my billing address</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck2">
+            <label class="custom-control-label" for="customCheck2">Save this information for next time</label>
+        </div>
+        <hr>
+    </div>
 </body>
 </html>
